@@ -1,0 +1,96 @@
+
+/* V2 — faction page visual upgrade using official transparent character art */
+.faction-title--visual{
+  display:grid!important;
+  grid-template-columns:.58fr .42fr!important;
+  min-height:360px!important;
+  padding:0!important;
+}
+.faction-title--visual:after{display:none!important}
+.faction-title-copy{
+  position:relative;
+  z-index:3;
+  padding:46px 20px 46px 48px;
+}
+.faction-title-art{
+  position:relative;
+  min-width:0;
+  overflow:hidden;
+  background:linear-gradient(145deg,#ff0786 0 72%,#18dbe7 72%);
+}
+.faction-title-art:before{
+  content:"";
+  position:absolute;
+  left:-100px;top:-80px;
+  width:170px;height:520px;
+  background:#0a0b10;
+  transform:rotate(24deg);
+  z-index:1;
+}
+.faction-title-art img{
+  position:absolute;
+  z-index:3;
+  right:2%;
+  bottom:-16%;
+  height:112%;
+  width:auto;
+  max-width:94%;
+  object-fit:contain;
+  object-position:right bottom;
+  filter:drop-shadow(0 15px 18px rgba(0,0,0,.28));
+}
+.faction-title-word{
+  position:absolute;
+  z-index:2;
+  right:-5px;
+  top:45px;
+  color:rgba(255,255,255,.13);
+  font-size:clamp(58px,7vw,120px);
+  line-height:1;
+  font-weight:1000;
+  letter-spacing:-.07em;
+  transform:rotate(-3deg);
+}
+.faction-card--with-art{
+  display:grid!important;
+  grid-template-columns:1fr 42%!important;
+  padding:0!important;
+  min-height:285px!important;
+  background:linear-gradient(145deg,#111219,#090a0f)!important;
+}
+.faction-card--with-art:before{display:none!important}
+.faction-card-copy{
+  position:relative;
+  z-index:3;
+  padding:28px 0 28px 30px;
+  min-width:0;
+}
+.faction-card--with-art .faction-card-copy>span{
+  position:absolute;
+  left:30px;
+  bottom:24px;
+  color:#ff0786;
+  font-size:11px;
+  font-weight:900;
+}
+.faction-card-art{
+  position:absolute;
+  z-index:2;
+  right:-1%;
+  bottom:-8%;
+  height:102%;
+  width:56%;
+  object-fit:contain;
+  object-position:right bottom;
+  pointer-events:none;
+  filter:drop-shadow(-8px 8px 12px rgba(0,0,0,.35));
+}
+.faction-card--with-art .faction-card-copy p{
+  max-width:78%;
+}
+@media(max-width:900px){
+  .faction-title--visual{grid-template-columns:1fr!important;min-height:690px!important}
+  .faction-title-art{min-height:330px}
+  .faction-title-art:before{display:none}
+  .faction-title-art img{left:50%;right:auto;transform:translateX(-50%);height:105%}
+}

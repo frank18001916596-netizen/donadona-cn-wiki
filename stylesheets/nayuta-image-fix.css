@@ -1,0 +1,102 @@
+
+/* NAYUTA official-art image positioning fix v2
+   Load AFTER nayuta.css / nayuta-player.css.
+   Keeps official artwork intact and prevents head/body cropping.
+*/
+
+/* General: never crop official NAYUTA character artwork */
+.dd-nayuta img[src*="img_nayuta"],
+.nayuta-page img[src*="img_nayuta"],
+.nayuta-detail img[src*="img_nayuta"],
+.nayuta-hero img[src*="img_nayuta"],
+.nayuta-clan img[src*="img_nayuta"],
+[class*="nayuta"] img[src*="img_nayuta"] {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  max-width: 100% !important;
+}
+
+/* Clan / member landing hero */
+.nayuta-clan,
+.nayuta-clan-hero,
+.nayuta-faction-hero,
+.dd-nayuta-clan,
+.dd-nayuta-faction {
+  overflow: hidden;
+}
+
+.nayuta-clan img[src*="img_nayuta"],
+.nayuta-clan-hero img[src*="img_nayuta"],
+.nayuta-faction-hero img[src*="img_nayuta"],
+.dd-nayuta-clan img[src*="img_nayuta"],
+.dd-nayuta-faction img[src*="img_nayuta"] {
+  width: min(48vw, 760px) !important;
+  height: calc(100% - 12px) !important;
+  max-height: 560px !important;
+  position: absolute !important;
+  right: 2.5% !important;
+  bottom: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Character detail hero */
+.nayuta-detail,
+.nayuta-character-hero,
+.dd-nayuta-detail,
+.dd-character-hero {
+  overflow: hidden;
+}
+
+.nayuta-detail img[src*="img_nayuta"],
+.nayuta-character-hero img[src*="img_nayuta"],
+.dd-nayuta-detail img[src*="img_nayuta"],
+.dd-character-hero img[src*="img_nayuta"] {
+  width: min(52vw, 820px) !important;
+  height: calc(100% - 8px) !important;
+  max-height: 660px !important;
+  position: absolute !important;
+  right: 1.5% !important;
+  bottom: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Thumbnail strip should remain cropped naturally inside its small boxes */
+img[src*="tmb_nayuta"] {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Fallback for the current generated markup: official main art is often a direct
+   child of a hero/visual container with absolute positioning. */
+[class*="hero"] > img[src*="img_nayuta"],
+[class*="visual"] > img[src*="img_nayuta"] {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  max-width: 58% !important;
+  right: 1.5% !important;
+  bottom: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  [class*="hero"] > img[src*="img_nayuta"],
+  [class*="visual"] > img[src*="img_nayuta"],
+  [class*="nayuta"] img[src*="img_nayuta"] {
+    max-width: 58% !important;
+    max-height: 72% !important;
+    right: -2% !important;
+    bottom: 0 !important;
+    object-fit: contain !important;
+    object-position: right bottom !important;
+  }
+}
