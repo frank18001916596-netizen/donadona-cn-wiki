@@ -1,0 +1,23 @@
+NAYUTA 角色 UI 统一补丁
+
+基于我们已经有的 clean rebuild + NAYUTA voice/content restore 制作。
+
+作用：
+- KUMA / ZAPPA / PORNO / KIRAKIRA / TORATARO 改成与 FLATTT 角色页同一视觉体系
+- 大角色立绘 + 大角色名 + 黑/粉 Hero
+- NAYUTA 用 cyan 作为阵营辅助色
+- 保留 NAYUTA 已恢复的技能内容
+- 保留 Voice 按钮
+- 下方 PROFILE / SKILLS 等改为统一滚动资料区
+
+不改：
+- FACTIONS 卡片布局
+- FLATTT 页面
+- 首页
+- mkdocs.yml
+- 地图
+- 数据生成器
+
+安装：
+把 ZIP 内 docs 的内容合并到当前项目 docs，覆盖同名文件。
+然后重启 mkdocs serve，并 Ctrl+F5。

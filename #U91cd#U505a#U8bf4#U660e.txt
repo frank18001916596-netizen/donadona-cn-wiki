@@ -1,0 +1,18 @@
+本版本从你刚上传的 donadona-cn-wiki(1).zip 原样重做。
+
+保留：
+- 原首页
+- 原 FACTIONS 框架
+- 原 NAYUTA
+- 原 mkdocs 导航结构
+- 原地图/数据库页面（完全没有新增地图数据或生成器）
+
+只新增/修改：
+1. 原 FACTIONS 页的 CLAN 02 从 COMING SOON 改成可点击 FLATTT
+2. FLATTT 三人阵营图和三张官方立绘
+3. FLATTT 阵营页
+4. MURASAKI / SHION / ALyCE 三个角色页
+5. FLATTT Voice 播放器
+6. ui-v4.css 末尾少量、严格限定的 FLATTT 卡片/Voice 样式
+
+CLAN 02 卡片固定高度 250px，阵营竖图只在卡片内部 contain，不会再把整行撑高。

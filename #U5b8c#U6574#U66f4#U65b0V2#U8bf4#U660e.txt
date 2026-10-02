@@ -1,0 +1,30 @@
+完整更新 V2
+
+这次实际修复了上一版没有生效的三个问题：
+
+【NAYUTA Voice】
+ZAPPA / PORNO / KIRAKIRA / TORATARO 的页面中已实际写入 3 个 Voice 按钮：
+nayuta02_01~03 / nayuta03_01~03 / nayuta04_01~03 / nayuta05_01~03。
+KUMA 不伪造 Voice。
+
+【NAYUTA 角色 UI】
+上一版错误地改了 .cp-*，但 NAYUTA 实际页面使用 .ddb-*，所以看起来“完全没改”。
+本版直接覆盖真正的 .ddb-*：
+- 左侧大立绘
+- 右侧黑/粉斜切 Hero
+- 巨大角色名
+- cyan NAYUTA 阵营色
+- Profile 从六块 Dashboard 卡改成紧凑资料行
+- Voice 放在 Hero 资料区
+- 下方 SKILLS / GUIDE / STORY 等统一为滚动角色资料区
+
+【尺寸】
+- FACTIONS：NAYUTA / FLATTT 桌面端各 50%，统一 350px 高
+- FLATTT 阵营图放大，粉色斜切明显
+- NAYUTA / FLATTT 成员选择卡统一 300px 高
+- 小屏幕自动改单列
+
+【CSS 顺序】
+final-ui-v2.css 被放在 extra_css 最后一项，避免再次被旧 CSS 覆盖。
+
+本版没有加入地图、YAML data 架构、generator 或武器生成器。

@@ -1,0 +1,24 @@
+完整更新 V3
+
+修复：
+1. NAYUTA 五个角色详情页增加顶部返回导航：
+   - ← NAYUTA / 返回成员
+   - FACTIONS / 返回阵营
+   原来藏在信息框里的小返回文字不再作为主要导航。
+
+2. FLATTT 三个角色详情页顶部导航统一：
+   - ← FLATTT / 返回成员
+   - FACTIONS / 返回阵营
+
+3. FLATTT 角色 Hero 尺寸缩小：
+   - 最大内容宽度 1420px
+   - Hero 固定 530px
+   - 角色立绘最大约 505px
+   - ALyCE / MURASAKI / SHION 三页统一
+   - 角色名、资料、Voice 按钮同步缩小
+   - 不裁角色立绘
+
+4. 新增 final-ui-v3.css，并作为 extra_css 最后一项加载，
+   确保旧 CSS 不会再次覆盖本次尺寸与导航修复。
+
+未加入地图、generator 或其他结构性改动。

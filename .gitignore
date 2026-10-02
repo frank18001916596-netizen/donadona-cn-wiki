@@ -1,0 +1,26 @@
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment / temporary files
+.env
+*.log
+*.tmp
+
+# Optional: if you do not have permission to redistribute third-party media,
+# uncomment/adapt the following paths before publishing the repository.
+# docs/assets/**/*.mp3
+# docs/assets/**/*.wav
+# docs/assets/**/*.mp4
+# docs/assets/**/*.webm

@@ -1,0 +1,247 @@
+
+/* =========================================================
+   FINAL UI V3
+   - visible upper-level navigation on character pages
+   - smaller / cleaner FLATTT hero cards
+   - no change to data or project structure
+   ========================================================= */
+
+/* ---------- visible top navigation: NAYUTA ---------- */
+.ddb-page .ddb-topnav{
+  position:relative!important;
+  z-index:30!important;
+  display:flex!important;
+  gap:10px!important;
+  align-items:center!important;
+  min-height:46px!important;
+  margin:0 0 16px!important;
+}
+.ddb-page .ddb-topnav a{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:36px!important;
+  padding:0 16px!important;
+  background:#ff168f!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  font:900 10px monospace!important;
+  letter-spacing:.05em!important;
+  clip-path:polygon(0 0,100% 0,91% 100%,0 100%)!important;
+}
+.ddb-page .ddb-topnav a:nth-child(2){
+  background:#111722!important;
+  color:#35d9e9!important;
+  border:1px solid rgba(53,217,233,.55)!important;
+}
+.ddb-page .ddb-topnav a:hover{
+  background:#fff200!important;
+  color:#080a0d!important;
+}
+
+/* the tiny old in-panel back link is redundant now */
+.ddb-page .ddb-profile .ddb-back{display:none!important}
+
+/* ---------- FLATTT top navigation ---------- */
+.cp-wrap .cp-nav{
+  position:relative!important;
+  z-index:30!important;
+  display:flex!important;
+  gap:10px!important;
+  align-items:center!important;
+  height:auto!important;
+  min-height:46px!important;
+  margin:0 0 14px!important;
+  border:0!important;
+}
+.cp-wrap .cp-nav>span{display:none!important}
+.cp-wrap .cp-nav a{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:36px!important;
+  padding:0 16px!important;
+  background:#ff168f!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  font:900 10px monospace!important;
+  letter-spacing:.05em!important;
+  box-shadow:none!important;
+  border:0!important;
+  transform:none!important;
+  clip-path:polygon(0 0,100% 0,91% 100%,0 100%)!important;
+}
+.cp-wrap .cp-nav a:nth-child(2){
+  background:#111722!important;
+  color:#35d9e9!important;
+  border:1px solid rgba(53,217,233,.55)!important;
+}
+.cp-wrap .cp-nav a:hover{
+  background:#fff200!important;
+  color:#080a0d!important;
+}
+
+/* ---------- FLATTT character detail size normalization ---------- */
+/* Previously the CP hero was ~650px and visually much larger than the NAYUTA card.
+   Keep the same visual language but make it a compact profile hero. */
+.cp-wrap{
+  max-width:1420px!important;
+  margin:0 auto!important;
+  padding:22px 28px 78px!important;
+}
+
+.cp-wrap .cp-hero{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:44% 56%!important;
+  min-height:530px!important;
+  height:530px!important;
+  overflow:hidden!important;
+  border:1px solid #352535!important;
+  background:#090a10!important;
+  box-shadow:8px 8px 0 rgba(255,22,143,.24)!important;
+}
+
+/* tighten the pink graphic block */
+.cp-wrap .cp-hero:before{
+  display:block!important;
+  left:44%!important;
+  top:5%!important;
+  width:53%!important;
+  height:86%!important;
+  background:
+    radial-gradient(circle at 1px 1px,rgba(255,255,255,.08) 1.05px,transparent 1.35px) 0 0/18px 18px,
+    linear-gradient(150deg,#17101a 0 27%,#ff168f 27% 70%,#101119 70%)!important;
+  border:0!important;
+  clip-path:polygon(7% 0,100% 0,100% 90%,86% 100%,0 94%,0 19%)!important;
+}
+
+/* left artwork stays complete but no longer dominates the viewport */
+.cp-wrap .cp-art{
+  grid-column:1!important;
+  grid-row:1!important;
+  position:relative!important;
+  z-index:3!important;
+  min-height:530px!important;
+  height:530px!important;
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:center!important;
+  padding:14px 14px 0!important;
+  background:transparent!important;
+  overflow:hidden!important;
+}
+.cp-wrap .cp-art img{
+  width:auto!important;
+  max-width:92%!important;
+  height:505px!important;
+  max-height:505px!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  filter:drop-shadow(8px 10px 13px rgba(0,0,0,.65))!important;
+}
+
+/* right-side information block: smaller name and tighter vertical rhythm */
+.cp-wrap .cp-info{
+  grid-column:2!important;
+  grid-row:1!important;
+  position:relative!important;
+  z-index:4!important;
+  align-self:center!important;
+  margin:54px 9% 36px 4%!important;
+  padding:24px 30px!important;
+  color:#fff!important;
+  background:rgba(8,9,14,.36)!important;
+}
+.cp-wrap .cp-info h1{
+  margin:4px 0 6px!important;
+  color:#fff!important;
+  font-size:clamp(54px,5.4vw,86px)!important;
+  line-height:.9!important;
+  font-style:italic!important;
+  font-weight:300!important;
+  letter-spacing:-.065em!important;
+  text-shadow:none!important;
+}
+.cp-wrap .cp-info h2{
+  margin:8px 0 14px!important;
+  color:#35d9e9!important;
+  font-size:18px!important;
+}
+.cp-wrap .cp-info>p{
+  margin:8px 0!important;
+  color:#d9d5dd!important;
+  font-size:13px!important;
+  line-height:1.6!important;
+}
+.cp-wrap .cp-info>p>b{
+  color:#ff8ac4!important;
+  margin-right:6px!important;
+}
+.cp-wrap .cp-kicker{
+  color:#35d9e9!important;
+  font:900 10px monospace!important;
+  letter-spacing:.16em!important;
+}
+
+/* Smaller voice row, same behavior */
+.cp-wrap .cp-voice-samples{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:7px!important;
+  margin-top:13px!important;
+}
+.cp-wrap .cp-voice-btn{
+  min-height:34px!important;
+  padding:8px 12px!important;
+  border:0!important;
+  background:#ff168f!important;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:900!important;
+}
+.cp-wrap .cp-voice-btn.is-playing,
+.cp-wrap .cp-voice-btn:hover{
+  background:#35d9e9!important;
+  color:#071015!important;
+}
+
+/* make content width/spacing match the compact hero */
+.cp-wrap>.cp-block{
+  margin:20px 0 0!important;
+  padding:30px 36px!important;
+}
+.cp-wrap>.cp-block h2{
+  margin:0 0 18px!important;
+  font-size:30px!important;
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .ddb-page .ddb-topnav,
+  .cp-wrap .cp-nav{
+    flex-wrap:wrap!important;
+  }
+  .cp-wrap{
+    padding:12px 12px 65px!important;
+  }
+  .cp-wrap .cp-hero{
+    display:block!important;
+    height:auto!important;
+    min-height:auto!important;
+  }
+  .cp-wrap .cp-art{
+    height:430px!important;
+    min-height:430px!important;
+  }
+  .cp-wrap .cp-art img{
+    height:415px!important;
+    max-height:415px!important;
+  }
+  .cp-wrap .cp-info{
+    margin:0!important;
+    padding:26px!important;
+    background:#101119!important;
+  }
+  .cp-wrap .cp-info h1{
+    font-size:56px!important;
+  }
+}

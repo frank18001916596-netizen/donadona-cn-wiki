@@ -1,0 +1,81 @@
+site_name: 多娜多娜中文 Wiki
+site_description: 《多娜多娜 一起来干坏事吧》非官方中文攻略 Wiki
+site_author: Community Project
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/characters.css
+  - stylesheets/factions.css
+  - stylesheets/factions-visual.css
+  - stylesheets/kuma.css
+  - stylesheets/nayuta-player.css
+  - stylesheets/search.css
+  - stylesheets/nayuta.css
+  - stylesheets/nayuta-image-fix.css
+  - stylesheets/character-database-v2.css
+  - stylesheets/ui-v4.css
+  - stylesheets/character-ui-v5.css
+  - stylesheets/home-theme-v6.css
+  - stylesheets/final-ui-v2.css
+  - stylesheets/final-ui-v3.css
+
+extra_javascript:
+  - javascripts/site-search.js
+  - javascripts/character-voice.js
+
+nav:
+  - 首页: index.md
+
+  - 攻略:
+      - 新手入门: guide/beginner.md
+      - 游戏系统: guide/gameplay.md
+      - 战斗攻略: guide/combat.md
+      - 主线流程: walkthrough/index.md
+      - 前期攻略: walkthrough/early-game.md
+      - 中期攻略: walkthrough/mid-game.md
+      - 后期攻略: walkthrough/late-game.md
+
+  - 角色:
+      - 角色一览: characters/index.md
+      - 角色页面模板: characters/template.md
+
+  - 地图:
+      - 地图一览: maps/index.md
+      - 地图页面模板: maps/template.md
+
+  - 数据库:
+      - 道具: database/items.md
+      - 武器: database/weapons.md
+      - 技能: database/skills.md
+      - 敌人: database/enemies.md
+
+  - 收集:
+      - 结局: endings/index.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

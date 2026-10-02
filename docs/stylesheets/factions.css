@@ -1,0 +1,51 @@
+
+/* Faction / clan pages */
+body{background:#08090d!important}
+.md-main,.md-main__inner,.md-content,.md-content__inner{background:transparent!important}
+.faction-page,.clan-page,.profile-page{max-width:1500px;margin:0 auto;padding:28px 30px 90px;color:#f6f6f7}
+.faction-page *,.clan-page *,.profile-page *{box-sizing:border-box}
+
+.faction-title{position:relative;overflow:hidden;padding:46px 48px;margin-bottom:34px;border:2px solid #292a31;background:linear-gradient(115deg,#0a0b10 0 64%,#ff0786 64%);box-shadow:9px 9px 0 #18dbe7}
+.faction-title:after{content:"FACTIONS";position:absolute;right:-10px;bottom:-42px;font-size:120px;font-weight:1000;color:rgba(255,255,255,.10)}
+.faction-home,.clan-breadcrumb a{color:#fff!important;text-decoration:none!important}
+.faction-home{display:inline-block;margin-bottom:34px;padding:8px 12px;background:#ff0786;font-weight:900;font-size:11px}
+.faction-kicker,.clan-label,.member-head span,.profile-section>span{color:#18dbe7;font-size:10px;font-weight:1000;letter-spacing:.22em}
+.faction-title h1{margin:5px 0 10px!important;color:#fff!important;font-size:clamp(48px,6vw,82px)!important;line-height:.92!important;font-weight:1000!important}
+.faction-title h1 span{display:block;margin-top:10px;color:#ffef19;font-size:.3em;letter-spacing:.04em}
+.faction-title p{margin:0!important;color:#c8c9d0}
+
+.faction-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.faction-card{min-height:245px;position:relative;padding:30px;border:1px solid #30313a;background:linear-gradient(145deg,#111219,#090a0f);color:#fff!important;text-decoration:none!important;overflow:hidden;transition:.18s ease}
+.faction-card:before{content:"";position:absolute;width:180px;height:180px;right:-90px;top:-90px;background:#ff0786;transform:rotate(45deg);opacity:.18}
+.faction-card--nayuta{border-color:#ff0786;box-shadow:6px 6px 0 rgba(255,7,134,.85)}
+.faction-card--nayuta:hover{transform:translateY(-5px);box-shadow:8px 8px 0 #18dbe7}
+.faction-num{font-size:10px;color:#777985;font-weight:900}.faction-en{margin-top:24px;color:#18dbe7;font-size:10px;font-weight:1000;letter-spacing:.15em}
+.faction-card h2{margin:4px 0 12px!important;color:#fff!important;font-size:29px!important}.faction-card p{color:#9b9ca5;font-size:12px;line-height:1.7}
+.faction-card>span{position:absolute;bottom:25px;left:30px;color:#ff0786;font-size:11px;font-weight:900}
+
+.clan-breadcrumb{display:flex;gap:10px;align-items:center;margin:2px 0 20px;color:#777985;font-size:11px;font-weight:900}
+.clan-hero{display:grid;grid-template-columns:.78fr 1.22fr;min-height:510px;border:2px solid #24252d;background:#0b0c11;overflow:hidden;box-shadow:9px 9px 0 #ff0786}
+.clan-copy{padding:64px 48px;display:flex;flex-direction:column;justify-content:center}
+.clan-copy h1,.profile-main h1{margin:8px 0 22px!important;color:#fff!important;font-size:clamp(55px,7vw,100px)!important;line-height:.85!important;font-weight:1000!important;letter-spacing:-.06em!important}
+.clan-copy h1 span,.profile-main h1 span{display:block;margin-top:14px;color:#ff0786;font-size:.28em;letter-spacing:.08em}
+.clan-copy p{max-width:520px;color:#c7c8cf;line-height:1.9;font-size:13px}.clan-source{margin-top:28px;color:#666873;font-size:10px}
+.clan-art{min-height:510px;background:#33d0e9;overflow:hidden}.clan-art img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+
+.member-head{display:flex;justify-content:space-between;align-items:end;margin:60px 0 22px;border-bottom:1px solid #2b2c34;padding-bottom:16px}
+.member-head h2,.profile-section h2{margin:3px 0 0!important;color:#fff!important;font-size:34px!important}.member-head p{max-width:500px;margin:0!important;color:#747680;font-size:11px;text-align:right}
+.member-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.member-card{position:relative;min-height:270px;padding:24px 20px;border:1px solid #30313a;background:linear-gradient(160deg,#11131a,#090a0f);color:#fff!important;text-decoration:none!important;overflow:hidden}
+.member-card:after{content:"";position:absolute;right:-45px;top:35px;width:140px;height:22px;background:rgba(255,7,134,.22);transform:rotate(-45deg)}
+a.member-card:hover{border-color:#ff0786;box-shadow:5px 5px 0 #ff0786;transform:translateY(-4px)}
+.member-index{color:#5f616b;font-size:10px;font-weight:900}.member-role{margin-top:42px;color:#18dbe7;font-size:9px;font-weight:1000;letter-spacing:.14em}
+.member-card h3{margin:5px 0 0!important;color:#fff!important;font-size:26px!important}.member-card strong{color:#ff0786;font-size:11px;letter-spacing:.12em}.member-card p{margin-top:18px;color:#898b95;font-size:11px;line-height:1.6}
+.member-card>span{position:absolute;left:20px;bottom:20px;color:#ffef19;font-size:10px;font-weight:900}
+
+.profile-hero{display:grid;grid-template-columns:1.5fr .5fr;border:2px solid #282932;background:linear-gradient(120deg,#0a0b10 0 72%,#ff0786 72%);box-shadow:9px 9px 0 #18dbe7}
+.profile-main{padding:60px 50px}.profile-main p{max-width:700px;color:#c6c7ce;line-height:1.9}
+.profile-facts{padding:45px 35px;background:rgba(0,0,0,.3);display:flex;flex-direction:column;justify-content:center;gap:25px}
+.profile-facts div{padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18)}.profile-facts small{display:block;color:#ffef19;font-weight:900;letter-spacing:.12em}.profile-facts b{display:block;color:#fff;font-size:22px}.profile-facts span{color:#bdbec5;font-size:11px}
+.profile-section{margin-top:55px}.profile-placeholder{margin-top:18px;padding:35px;border:1px dashed #3d3f48;background:#0d0e13;color:#7e808a}
+
+@media(max-width:1100px){.faction-grid{grid-template-columns:repeat(2,1fr)}.member-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.faction-page,.clan-page,.profile-page{padding:15px}.faction-grid{grid-template-columns:1fr}.clan-hero,.profile-hero{grid-template-columns:1fr}.member-grid{grid-template-columns:repeat(2,1fr)}.member-head{align-items:start;flex-direction:column;gap:10px}.member-head p{text-align:left}.clan-art{min-height:320px}}

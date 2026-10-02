@@ -1,0 +1,40 @@
+Donadona 中文 Wiki — 完整更新整合版
+
+本完整包整合：
+1. 原始首页 / 原 FACTIONS 框架 / 原 NAYUTA 基础内容
+2. FLATTT 阵营：
+   - CLAN 02 可点击
+   - FLATTT 三人阵营合图
+   - MURASAKI / SHION / ALyCE 阵营页与角色页
+   - FLATTT Voice 01/02/03
+3. FACTIONS UI 修复：
+   - NAYUTA / FLATTT 桌面端同排等宽
+   - 固定卡片高度
+   - FLATTT 粉色斜切、边框、阴影
+   - 阵营图 contain，不再撑高卡片
+4. NAYUTA 内容恢复：
+   - ZAPPA / PORNO / KIRAKIRA / TORATARO Voice 01/02/03
+   - NAYUTA 五人 35 项此前整理的技能/被动资料
+   - database/skills.md 技能索引
+5. NAYUTA 角色 UI：
+   - KUMA / ZAPPA / PORNO / KIRAKIRA / TORATARO
+   - 与 FLATTT 统一为官方角色页式 Hero
+   - 黑/粉主视觉 + NAYUTA cyan 阵营色
+   - 保留技能与 Voice
+
+本版没有重新加入：
+- 地图数据工程
+- YAML data 架构
+- character/skill/weapon generator
+- 武器生成器
+- 其他此前导致框架混乱的实验性结构
+
+使用：
+这是完整项目，不是补丁。
+解压后直接进入 donadona-cn-wiki 文件夹运行：
+mkdocs serve
+
+浏览器：
+http://127.0.0.1:8000/
+
+建议不要覆盖之前已经混乱的项目，直接把本文件夹作为新的基线。

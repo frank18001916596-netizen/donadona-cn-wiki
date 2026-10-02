@@ -1,0 +1,33 @@
+
+/* Donadona Character Database V2 */
+:root{--ddb-bg:#080b0f;--ddb-panel:#11161d;--ddb-panel2:#151c24;--ddb-cyan:#28e7ef;--ddb-pink:#ff3f9d;--ddb-yellow:#ffe34b;--ddb-line:#2a3440;--ddb-text:#eef5f6;--ddb-muted:#8fa1ad}
+.ddb-page{position:relative;max-width:1380px;margin:0 auto;padding:28px 28px 80px;color:var(--ddb-text);background:
+radial-gradient(circle at 1px 1px,rgba(40,231,239,.13) 1px,transparent 1.3px) 0 0/22px 22px,
+linear-gradient(135deg,rgba(255,63,157,.06),transparent 35%),
+var(--ddb-bg);min-height:100vh}
+.ddb-page:before{content:"";position:fixed;right:-12vw;top:20vh;width:45vw;height:16vw;background:var(--ddb-pink);opacity:.035;transform:skewY(-18deg);pointer-events:none}
+.ddb-hero{min-height:520px;position:relative;overflow:hidden;border:1px solid #26323d;background:linear-gradient(105deg,#111720 0 49%,rgba(17,23,32,.7) 64%,rgba(8,11,15,.1));box-shadow:0 24px 70px rgba(0,0,0,.3)}
+.ddb-hero:after{content:"";position:absolute;left:0;bottom:0;width:58%;height:8px;background:linear-gradient(90deg,var(--ddb-cyan) 0 55%,var(--ddb-pink) 55% 78%,var(--ddb-yellow) 78%)}
+.ddb-profile{position:relative;z-index:3;width:55%;padding:38px 36px 46px}
+.ddb-back,.ddb-kicker{font:700 12px/1.2 monospace;letter-spacing:.16em;color:var(--ddb-cyan)}
+.ddb-back{text-decoration:none}.ddb-profile h1{font-size:clamp(48px,6vw,86px);line-height:.9;margin:28px 0 18px;letter-spacing:-.05em}.ddb-profile h1 small{display:block;margin-top:12px;font-size:22px;letter-spacing:.04em;color:#b8c5cb}
+.ddb-intro{max-width:680px;font-size:15px;line-height:1.85;color:#d6e0e4}
+.ddb-tags,.ddb-chiprow{display:flex;flex-wrap:wrap;gap:8px}.ddb-tags span,.ddb-chiprow span{border:1px solid #35505a;background:#0d2026;padding:6px 10px;font:700 11px monospace;color:var(--ddb-cyan)}
+.ddb-profile-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:24px}.ddb-profile-grid>div{background:rgba(5,9,13,.75);border-left:3px solid var(--ddb-pink);padding:10px 12px}.ddb-profile-grid small{display:block;font:700 10px monospace;color:var(--ddb-muted);letter-spacing:.12em}.ddb-profile-grid b{font-size:13px}
+.ddb-art{position:absolute;right:0;bottom:0;width:52%;height:100%;display:flex;justify-content:center;align-items:flex-end;z-index:2}.ddb-art img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center bottom!important;position:static!important;transform:none!important}
+.ddb-watermark{position:absolute;right:-15px;top:18px;font:900 118px/1 Arial;color:#fff;opacity:.035;letter-spacing:-.08em;z-index:1}
+.ddb-section{margin-top:22px;padding:26px;background:linear-gradient(145deg,rgba(20,27,35,.97),rgba(10,14,19,.97));border:1px solid var(--ddb-line);position:relative;overflow:hidden}
+.ddb-section:before{content:"";position:absolute;left:0;top:0;width:92px;height:4px;background:var(--ddb-cyan)}
+.ddb-section h2{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}.ddb-section h2 span{font:900 28px Arial;letter-spacing:-.04em}.ddb-section h2 small{font-size:12px;color:var(--ddb-muted);letter-spacing:.12em}
+.ddb-quick:before,.ddb-tips:before{background:var(--ddb-pink)}.ddb-weapon:before{background:var(--ddb-yellow)}
+.ddb-two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ddb-bar{margin:15px 0}.ddb-bar>div{display:flex;justify-content:space-between;font:700 12px monospace}.ddb-bar i{display:block;height:8px;background:#252e37;margin-top:6px;transform:skewX(-20deg);overflow:hidden}.ddb-bar em{display:block;height:100%;background:linear-gradient(90deg,var(--ddb-cyan),var(--ddb-pink))}
+.ddb-bigvalue{font-size:30px;font-weight:900;color:var(--ddb-yellow);margin:8px 0 14px}
+.ddb-tablewrap{overflow:auto}.ddb-table{width:100%;border-collapse:collapse;font-size:13px}.ddb-table th{background:#090d12;color:var(--ddb-cyan);font:700 11px monospace;letter-spacing:.08em;text-align:left}.ddb-table th,.ddb-table td{padding:12px;border-bottom:1px solid #29343e}.ddb-table tr:hover td{background:rgba(40,231,239,.035)}
+.ddb-guide h3{font:800 12px monospace;color:var(--ddb-pink);letter-spacing:.12em}.ddb-guide li{margin:9px 0;color:#d7e0e3}
+.ddb-placeholder{display:flex;justify-content:space-between;gap:20px;border-bottom:1px dashed #33414c;padding:15px 0}.ddb-placeholder span{color:var(--ddb-muted)}
+.ddb-storygrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.ddb-storygrid div{padding:15px;background:#0c1117;border-left:3px solid var(--ddb-cyan)}.ddb-storygrid b,.ddb-storygrid span{display:block}.ddb-storygrid span{color:var(--ddb-muted);font-size:13px;margin-top:5px}
+.ddb-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.ddb-gallery figure{margin:0;background:#090d12;border:1px solid #27333d}.ddb-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover}.ddb-gallery figcaption{padding:8px;font:700 10px monospace;color:var(--ddb-muted)}
+.ddb-indexhead{padding:48px 10px 28px}.ddb-indexhead>p:first-child{color:var(--ddb-cyan);font:700 12px monospace;letter-spacing:.18em}.ddb-indexhead h1{font-size:72px;margin:5px 0}.ddb-indexhead h1 small{font-size:22px;color:var(--ddb-muted)}
+.ddb-members{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.ddb-member{min-height:280px;position:relative;overflow:hidden;text-decoration:none!important;color:var(--ddb-text)!important;background:linear-gradient(120deg,#111821,#0b1016);border:1px solid #29343e;padding:28px}.ddb-member:hover{border-color:var(--ddb-cyan);transform:translateY(-2px)}.ddb-member img{position:absolute!important;right:-2%;bottom:0;width:58%!important;height:100%!important;object-fit:contain!important;object-position:right bottom!important}.ddb-member>div:not(.ddb-member-no){position:relative;z-index:2;width:55%}.ddb-member small{color:var(--ddb-cyan);font:700 10px monospace}.ddb-member h2{font-size:38px;margin:38px 0 0}.ddb-member p{margin:2px 0 12px}.ddb-member span{font-size:11px;color:var(--ddb-muted)}.ddb-member-no{position:absolute;left:14px;top:5px;font:900 82px Arial;color:#fff;opacity:.035}
+@media(max-width:900px){.ddb-page{padding:12px}.ddb-hero{min-height:720px}.ddb-profile{width:100%;padding:24px}.ddb-profile h1{font-size:52px}.ddb-art{width:70%;height:48%;right:-10%}.ddb-two,.ddb-members{grid-template-columns:1fr}.ddb-gallery{grid-template-columns:repeat(3,1fr)}.ddb-storygrid{grid-template-columns:1fr}.ddb-profile-grid{grid-template-columns:1fr 1fr}}
